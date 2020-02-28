@@ -16,8 +16,8 @@ def run_clock_date(screen):
 
     	screen.fill(black)
     	time = myfont.render(current_time.strftime("%H:%M:%S"), 1, white)
-    	date = myfontsmall.render(current_time.strftime("%d.%M.%Y"), 1, white)
-    	screen.blit(time, (100, 100))
-    	screen.blit(date, (125, 130))
+    	date = myfontsmall.render(current_time.strftime("%d.%m.%Y"), 1, white)
+    	screen.blit(time, (30, 30))
+    	screen.blit(date, (35, 80))
     	pygame.display.update()
     pygame.quit()
